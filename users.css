@@ -1,0 +1,51 @@
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: tahoma ,sans-serif;
+}
+
+body{
+	background: #c5c8d0;
+}
+
+
+.container{
+display: flex;
+align-items: flex-start;
+flex-flow: row wrap ;
+margin: 50px;
+
+}
+
+.container .user {
+	    width: 200px;
+    height: 80px;
+	background-color: #2951b9;
+	margin-left: 30px;
+	margin-top: 20px;
+	display: flex;
+align-items: flex-start;
+flex-flow: row wrap ;
+
+}
+.container .user .photo {
+	width: 30%;
+	}
+
+.container .user .photo img {
+	width: 100%;
+	border-radius: 50%;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.container .user .info {
+	
+	
+	margin-left: 30px;
+	margin-top: 30px;
+	color: white;
+
+}

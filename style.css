@@ -1,0 +1,92 @@
+body{
+    background-image: url(images/7.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: relative;
+ 
+}
+
+#main{
+	    background-color: #543a3a;
+	    opacity: .8;
+	   height: 388px;
+    width: 325px;
+    position: absolute;
+   top: 85px;
+    left: 518px;
+       padding-left: 48px;
+        padding-right: 48px;
+       text-align: center;
+}
+#head{
+	height: 20%;
+	background-color: red;
+	width: 100%;
+	padding-top: 20px;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    perspective: 600px ;
+}
+.card
+{
+    width: 300px ;
+  height: 445px;
+    margin: 50px auto ;
+    position: relative;
+    transform-style:preserve-3d ;
+    transition: all 1.5s ease-in-out;
+}
+.card >div {
+    position: absolute;
+    top: 0;
+    left: 0 ;
+    width: 100% ;
+    height: 100% ;
+    padding: 10px ;
+    border: 1px solid #ccc ;
+    border-radius: 10px ;
+    text-align: center;
+    color: #777;
+   background: #EEE ;
+ }
+.card .front header,.card .back header
+{
+    background: #444;
+    width: 100% ;
+    height:80px ;
+    margin-bottom: 55px ;
+    border-radius: 10px 10px 0 0
+}
+
+.card .front img,.card .back img
+{
+    width: 100px ;
+    height: 100px ;
+    border-radius: 50% ;
+    position: relative;
+    top: 25px ;
+    
+}
+.card .back ul
+{
+    padding: 0 ;
+    list-style: none;
+    line-height: 2 ;
+}
+.card .front
+{
+    z-index: 2;
+    backface-visibility: hidden;
+    
+}
+.card .back
+{
+    z-index: 1 ;
+    transform: rotateY(180deg) ;
+}
